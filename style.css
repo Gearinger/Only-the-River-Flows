@@ -1,0 +1,221 @@
+:root {
+    --whitecolor: rgba(250, 250, 255, 1);
+    --graycolor: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    padding: 0%;
+    margin: 0%;
+    border: 0rem;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    border: 0rem;
+    background-image: url("https://qn.wbkol.com/20230511133546_501891683783346.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+.nav-menu {
+    margin: 20px 60px;
+    display: flex;
+    gap: 30px;
+    direction: rtl;
+    position: fixed;
+    right: 0%;
+    z-index: 9;
+}
+
+.nav-menu button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-width: 0rem;
+    color: var(--whitecolor);
+    background-color: rgba(250, 250, 250, 0.1);
+    border-color: transparent;
+    box-shadow: 5px 5px 2px 0px var(--graycolor),
+        inset 2px 2px 1px 0px rgba(255, 255, 255, 0.3);
+    ;
+    backdrop-filter: blur(10px);
+
+}
+
+.nav-menu button:hover {
+    background-color: rgba(10, 50, 100, 0.7);
+    box-shadow: 10px 10px 10px 0px var(--graycolor),
+        inset 2px 2px 3px 0px rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    align-content: center;
+    justify-content: center;
+    left: 20%;
+    height: calc(100vh);
+}
+
+.main-body-title {
+    line-height: 1rem;
+    font-size: 3rem;
+    color: var(--whitecolor);
+    margin-block-end: 2rem;
+}
+
+.main-body-title:hover {
+    color: red;
+    filter: blur(5px);
+}
+
+.main-body-title:hover::after {
+    content: "  help me~";
+    color: red;
+    filter: blur(4px);
+}
+
+.main-body-text {
+    line-height: 2.5rem;
+    font-size: 1.0rem;
+    letter-spacing: 0.1rem;
+    color: var(--whitecolor);
+    width: 50%;
+    text-indent: 2rem;
+}
+
+.main-body-text:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.bg-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.brief {
+    padding: 5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: var(--whitecolor);
+    text-indent: 2rem;
+    background-image: url("https://p1.itc.cn/q_70/images01/20231016/399fc1d18602484fa89143791b343e5e.jpeg");
+}
+
+.capter {
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 5rem;
+    gap: 3rem 10rem;
+    background-image: url("https://p8.itc.cn/q_70/images01/20231016/0f42e9f22c61437cb02fa797197ecc70.jpeg");
+}
+
+.product-item {
+    width: 250px;
+    height: 400px;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    background-color: rgba(80, 100, 120, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 25px 5px black,
+        0 0 10px 0px black,
+        0 0 5px 0px black;
+    backdrop-filter: blur(10px);
+
+}
+
+.product-item:hover {
+    box-shadow: 0 0 25px 5px rgba(250, 10, 10, 0.5);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-item p {
+    color: var(--whitecolor);
+    margin: 0.6rem;
+}
+
+.addr {
+    padding: 5rem;
+    display: flex;
+    background-color: rgba(10, 40, 120, 0.3);
+}
+
+.addr #map {
+    height: 300px;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+.addr-info {
+    padding: 0 2rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    color: var(--whitecolor);
+}
+
+.footer {
+    display: flex;
+    padding: 5rem;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .plat-link {
+    color: var(--whitecolor);
+    opacity: 0.8;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.footer .plat-link:hover {
+    opacity: 1;
+    text-shadow:
+        0px 0px 20px black,
+        0px 0px 10px rgba(200, 250, 250, 0.8);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 250, 250, 0.3);
+}
